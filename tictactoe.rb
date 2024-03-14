@@ -130,10 +130,10 @@ class Game
             for col in 0..2 do
                 char = grid[col + 3*row] == 1 ? "X" : grid[col + 3*row] == 0 ? "O" : col + 3*row + 1
                 print(" #{char} |")
-                end
-                print("\n-------------\n")
             end
+            print("\n-------------\n")
         end
+    end
 end
 
 game = Game.new()
